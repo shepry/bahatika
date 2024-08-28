@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Rocket Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .controls input, .controls button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <input type="number" id="amountInput" placeholder="Place Amount">
+        <button id="playButton">Play</button>
+    </div>
+    <script src="converted_game.js"></script>
+</body>
+</html>
